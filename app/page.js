@@ -13,8 +13,8 @@ export default function Home() {
       <Header/>
       <Hero/>
       <About/>
-      {/* <MyJourney/>
-      <TechStack/>
+      <MyJourney/>
+      {/* <TechStack/>
       <Work/>
       <Services/>
       <Footer/> */}

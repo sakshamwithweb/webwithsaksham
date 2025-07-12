@@ -13,7 +13,7 @@ const Card = ({icon:Icon,title,description}) => {
 
 const About = () => {
   return (
-    <div className='h-[90vh] py-20 px-6 text-center flex flex-col gap-8'>
+    <div className='h-[80vh] py-20 px-6 text-center flex flex-col gap-8'>
       <h2 className='text-4xl font-bold'>About Me</h2>
       <div className='text-xl font-semibold text-center text-gray-600 max-w-3xl mx-auto leading-relaxed'>With over 6 years of experience in web development and design, I specialize in creating digital solutions that drive business growth and enhance user experiences.</div>
       <div className='achievement-cards grid grid-cols-3 gap-8'>
