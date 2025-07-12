@@ -9,9 +9,9 @@ const Hero = () => {
         <div className='flex gap-14 min-h-[90vh] mt-18 p-16 items-center'>
             <div className='h-full w-[50%]'>
                 <div>
-                    <div className='text-[#8BBEE8] font-medium text-lg'>Hello, I'm</div>
-                    <div className='text-5xl font-bold mt-4'>Saksham <span className='bg-gradient-to-br from-[#8BBEE8] to-black bg-clip-text text-transparent'>Goswami</span></div>
-                    <div className='mt-4 text-2xl md:text-3xl font-light text-gray-600'>Full Stack Developer & UI/UX Designer</div>
+                    <p className='text-[#8BBEE8] font-medium text-lg'>Hello, I'm</p>
+                    <p className='text-5xl font-bold mt-4'>Saksham <span className='bg-gradient-to-br from-[#8BBEE8] to-black bg-clip-text text-transparent'>Goswami</span></p>
+                    <p className='mt-4 text-2xl md:text-3xl font-light text-gray-600'>Full Stack Developer & UI/UX Designer</p>
                 </div>
                 <p className='text-lg mt-8 font-semibold text-gray-600 leading-relaxed max-w-lg'>
                     I craft digital experiences that seamlessly blend beautiful design with powerful functionality. Passionate about creating solutions that make a real impact.

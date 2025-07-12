@@ -12,8 +12,8 @@ export default function Home() {
     <div>
       <Header/>
       <Hero/>
-      {/* <About/>
-      <MyJourney/>
+      <About/>
+      {/* <MyJourney/>
       <TechStack/>
       <Work/>
       <Services/>
