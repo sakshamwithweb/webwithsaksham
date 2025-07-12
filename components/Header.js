@@ -14,7 +14,7 @@ const Header = () => {
           <li><Link className='hover:transition-colors duration-300 hover:text-[#8BBEE8]' href={"#work"}>Work</Link></li>
           <li><Link className='hover:transition-colors duration-300 hover:text-[#8BBEE8]' href={"#services"}>Services</Link></li>
         </ul>
-        <Button className={"rounded-3xl text-md px-7 py-5 hover:bg-[#2f374a] transition-colors duration-300"}>Contact</Button>
+        <Button className={"rounded-3xl text-lg px-7 py-2 hover:bg-[#2f374a] transition-colors duration-300"}>Contact</Button>
       </nav>
     </header>
   )
