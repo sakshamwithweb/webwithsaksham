@@ -4,7 +4,7 @@ import React from 'react'
 
 const MyJourney = () => {
     const data = {
-        journey: "Started as a curious designer, evolved into a full-stack developer. I believe in the power of clean code, intuitive design, and meaningful user experiences.",
+        journey: "Started as a curious learner, evolved into a full-stack developer. I believe in the power of clean code, intuitive design, and meaningful user experiences.",
         skills: [
             "Problem-solving mindset",
             "Continuous learning approach",
