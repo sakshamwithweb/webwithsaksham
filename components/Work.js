@@ -39,7 +39,7 @@ const Work = () => {
             <h2 className='text-2xl font-bold py-5'>E-Commerce Platform</h2>
             <Link target='_blank' href={""}><SquareArrowOutUpRight className='transition-all group-hover:scale-120 duration-200' color='#8BBEE8' /></Link>
           </div>
-          <div className='text-gray-600 font-semibold'>Full-stack e-commerce solution with payment integration, inventory management, and analytics dashboard.</div>
+          <p className='text-gray-600 font-semibold'>Full-stack e-commerce solution with payment integration, inventory management, and analytics dashboard.</p>
           <div className='tech_used flex'>
             <p className='m-3 text-sm font-semibold'>React</p>
             <p className='m-3 text-sm font-semibold'>Node.js</p>

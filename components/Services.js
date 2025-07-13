@@ -5,8 +5,8 @@ const Card = ({ icon: Icon, title, description, subServices }) => {
   return (
     <div className='p-8 mb-16 space-y-4 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all hover:scale-105 duration-300 text-start'>
       <div className='w-16 h-16 rounded-full flex items-center justify-center bg-[#e2ecf5]'><Icon color="#8BBEE8" /></div>
-      <div className='text-2xl font-bold'>{title}</div>
-      <div className='text-gray-600 font-semibold'>{description}</div>
+      <h2 className='text-2xl font-bold'>{title}</h2>
+      <p className='text-gray-600 font-semibold'>{description}</p>
       {subServices.map((item,index) => {
         return <div key={index} className='flex gap-4 items-center font-semibold'>
           <CheckCircle className='h-5 w-5 text-[#8BBEE8]' />

@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className='fixed z-50 backdrop-blur-md bg-white/30 top-0 w-full'>
       <nav className='flex justify-between px-6 py-4 border-b items-center'>
-        <div className='text-2xl font-bold bg-gradient-to-br from-[#8BBEE8] to-black bg-clip-text text-transparent'>Saksham</div>
+        <p className='text-2xl font-bold bg-gradient-to-br from-[#8BBEE8] to-black bg-clip-text text-transparent'>Saksham</p>
         <ul className='flex gap-8 text-lg font-medium'>
           <li><Link className='hover:transition-colors duration-300 hover:text-[#8BBEE8]' href={"#home"}>Home</Link></li>
           <li><Link className='hover:transition-colors duration-300 hover:text-[#8BBEE8]' href={"#about"}>About</Link></li>
