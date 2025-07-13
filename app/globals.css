@@ -2,6 +2,17 @@
 @import "tw-animate-css";
 @import 'devicon/devicon.min.css';
 
+@layer utilities {
+  .scrollbar-hide {
+    scrollbar-width: none;   
+    -ms-overflow-style: none;
+
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-15px); }

@@ -2,10 +2,10 @@ import React from 'react'
 
 const TechStack = () => {
   return (
-    <div className='p-8 text-center flex flex-col gap-12'>
+    <div className='p-8 text-center flex flex-col gap-12 mb-16'>
       <div className='flex flex-col gap-4'>
         <h1 className="text-4xl font-bold">Tech Stack</h1>
-        <p className='text-gray-600 text-xl'>Technologies I work with to bring ideas to life</p>
+        <p className='text-gray-600 text-xl font-semibold'>Technologies I work with to bring ideas to life</p>
       </div>
       <div className='techstacks grid grid-cols-6 gap-12'>
         <div className=' rounded-2xl transition-all shadow-lg hover:shadow-xl p-4 hover:scale-115 duration-300'>

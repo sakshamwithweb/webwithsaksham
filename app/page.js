@@ -15,8 +15,8 @@ export default function Home() {
       <About/>
       <MyJourney/>
       <TechStack/>
-      {/* <Work/>
-      <Services/>
+      <Work/>
+      {/* <Services/>
       <Footer/> */}
     </div>
   );
