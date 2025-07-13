@@ -21,7 +21,7 @@ const Card = ({ icon: Icon, title, description, subServices }) => {
 
 const Services = () => {
   return (
-    <div className='h-[80vh] py-20 px-6 text-center flex flex-col gap-8'>
+    <div className='min-h-[80vh] py-4 px-6 text-center flex flex-col gap-8'>
       <h2 className='text-4xl font-bold'>Services</h2>
       <div className='text-xl font-semibold text-gray-600 max-w-3xl mx-auto leading-relaxed'>Comprehensive solutions for your digital needs</div>
       <div className='achievement-cards grid grid-cols-3 gap-8 my-8'>
