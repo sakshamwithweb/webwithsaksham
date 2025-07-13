@@ -1,4 +1,4 @@
-import { TrophyIcon } from 'lucide-react'
+import { Heart, RocketIcon, TrophyIcon } from 'lucide-react'
 import React from 'react'
 
 const Card = ({ icon: Icon, title, description }) => {
@@ -12,14 +12,35 @@ const Card = ({ icon: Icon, title, description }) => {
 }
 
 const About = () => {
+  const data = {
+    description:"With over 1 year of experience in web development and design, I specialize in creating digital solutions that drive business growth and enhance user experiences.",
+    achievement:[
+      {
+        icon:TrophyIcon,
+        title:"1+ Year",
+        description:"Professional Experience"
+      },
+      {
+        icon:RocketIcon,
+        title:"10+",
+        description:"Projects Completed"
+      },
+      {
+        icon:Heart,
+        title:"89%",
+        description:"Client Satisfaction"
+      },
+    ]
+  }
+
   return (
     <div id='about' className='scroll-mt-[12px] h-[80vh] py-20 px-6 text-center flex flex-col gap-8'>
       <h2 className='text-4xl font-bold'>About Me</h2>
-      <p className='text-xl font-semibold text-center text-gray-600 max-w-3xl mx-auto leading-relaxed'>With over 6 years of experience in web development and design, I specialize in creating digital solutions that drive business growth and enhance user experiences.</p>
+      <p className='text-xl font-semibold text-center text-gray-600 max-w-3xl mx-auto leading-relaxed'>{data.description}</p>
       <div className='achievement-cards grid grid-cols-3 gap-8'>
-        <Card icon={TrophyIcon} title={"Nacho"} description={"Natu natu natu"} />
-        <Card icon={TrophyIcon} title={"Nacho"} description={"Natu natu natu"} />
-        <Card icon={TrophyIcon} title={"Nacho"} description={"Natu natu natu"} />
+        {data.achievement.map(({title,icon,description},index)=>{
+          return <Card key={index} icon={icon} title={title} description={description} />
+        })}
       </div>
     </div>
   )

@@ -4,6 +4,22 @@ import React from 'react'
 import { Button } from './ui/button'
 
 const Footer = () => {
+    const data = {
+        links: [
+            {
+                url: "https://github.com/sakshamwithweb",
+                icon: <Github />
+            },
+            {
+                url: "https://x.com/webwithsaksham",
+                icon: <Twitter />
+            },
+            {
+                url: "mailto:websaksham39@gmail.com",
+                icon: <Mail />
+            },
+        ]
+    }
     return (
         <footer className='bg-black justify-around py-12 px-8 pb-24 grid grid-cols-4 text-white gap-16'>
             <div className='col-span-2 space-y-4'>
@@ -23,9 +39,9 @@ const Footer = () => {
             <div className='space-y-4'>
                 <h3 className='font-bold'>Connect</h3>
                 <div className='flex space-x-4'>
-                    <Link href={""} className='transition:all hover:text-blue-300 duration-300'><Github /></Link>
-                    <Link href={""} className='transition:all hover:text-blue-300 duration-300'><Twitter /></Link>
-                    <Link href={""} className='transition:all hover:text-blue-300 duration-300'><Mail /></Link>
+                    {data.links.map(({url,icon},index) => {
+                        return <Link target='_blank' key={index} href={url} className='transition:all hover:text-blue-300 duration-300'>{icon}</Link>
+                    })}
                 </div>
             </div>
         </footer>
