@@ -6,7 +6,7 @@ const Card = ({icon:Icon,title,description}) => {
     <div className='text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300'>
       <div className='w-16 h-16 rounded-full flex items-center justify-center mx-auto bg-[#e2ecf5] m-auto'><Icon color="#8BBEE8" /></div>
       <div className='text-2xl font-bold'>{title}</div>
-      <div>{description}</div>
+      <div className='text-gray-600'>{description}</div>
     </div>
   )
 }
