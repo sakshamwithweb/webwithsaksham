@@ -44,9 +44,9 @@ const Services = () => {
   }
   return (
     <div id='services' className='scroll-mt-[72px] min-h-[80vh] py-4 px-6 text-center flex flex-col gap-8'>
-      <h2 className='text-4xl font-bold'>Services</h2>
-      <div className='text-xl font-semibold text-gray-600 max-w-3xl mx-auto leading-relaxed'>Comprehensive solutions for your digital needs</div>
-      <div className='achievement-cards grid grid-cols-3 gap-8 my-8'>
+      <h2 className='text-3xl md:text-4xl font-bold'>Services</h2>
+      <div className='text-lg md:text-xl font-semibold text-gray-600 max-w-3xl mx-auto leading-relaxed'>Comprehensive solutions for your digital needs</div>
+      <div className='achievement-cards grid grid-cols-1 md:grid-cols-3 md:gap-8 my-8'>
         {data.services.map(({ icon, title, description, subServices }, index) => {
           return <Card key={index} icon={icon} title={title} description={description} subServices={subServices} />
         })}

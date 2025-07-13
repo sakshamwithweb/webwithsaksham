@@ -14,19 +14,19 @@ const MyJourney = () => {
     }
     return (
         <div id='myjourney' className='p-4 mb-16 flex'>
-            <div className='flex flex-col gap-6 w-[50%] p-4'>
-                <h1 className='text-4xl font-bold'>My Journey</h1>
+            <div className='flex flex-col gap-6 w-full md:w-[50%] p-4'>
+                <h1 className='text-3xl md:text-4xl font-bold'>My Journey</h1>
                 <p className='font-semibold text-gray-600 text-lg'>{data.journey}</p>
                 <div className='skills flex flex-col gap-4'>
                     {data.skills.map((skill,index) => {
                         return <div key={index} className='flex gap-4 items-center text-lg font-semibold'>
                             <CheckCircle className='h-5 w-5 text-[#8BBEE8]' />
-                            <p>{skill}</p>
+                            <p className='text-gray-600'>{skill}</p>
                         </div>
                     })}
                 </div>
             </div>
-            <div className='w-[50%]'>
+            <div className='w-[50%] hidden md:visible'>
                 <Image width={500} height={500} className="w-full h-80 rounded-2xl object-cover" src="/computerSet.png" alt="" />
             </div>
         </div>

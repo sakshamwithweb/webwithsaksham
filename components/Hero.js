@@ -28,29 +28,27 @@ const Hero = () => {
     }
 
     return (
-        <div id='hero' className='scroll-mt-[36px] flex gap-14 min-h-[90vh] mt-18 p-16 items-center'>
-            <div className='h-full w-[50%]'>
+        <div id='hero' className='scroll-mt-[36px] flex flex-col-reverse md:flex-row gap-14 min-h-[90vh] mt-18 p-4 md:p-16 items-center'>
+            <div className='h-full w-full md:w-[50%] text-center md:text-left'>
                 <div>
                     <p className='text-[#8BBEE8] font-medium text-lg'>Hello, I'm</p>
-                    <p className='text-5xl font-bold mt-4'>{data.name.split(" ")[0]}{" "}<span className='bg-gradient-to-br from-[#8BBEE8] to-black bg-clip-text text-transparent'>{data.name.split(" ")[1]}</span></p>
+                    <p className='text-4xl md:text-5xl font-bold mt-4'>{data.name.split(" ")[0]}{" "}<span className='bg-gradient-to-br from-[#8BBEE8] to-black bg-clip-text text-transparent'>{data.name.split(" ")[1]}</span></p>
                     <p className='mt-4 text-2xl md:text-3xl font-light text-gray-600'>{data.roll}</p>
                 </div>
-                <p className='text-lg mt-8 font-semibold text-gray-600 leading-relaxed max-w-lg'>
+                <p className='text-lg mt-8 font-semibold text-gray-600 leading-relaxed md:max-w-lg'>
                     {data.description}
                 </p>
-                <div className='mt-8 flex gap-4'>
+                <div className='mt-8 flex flex-col md:flex-row gap-4'>
                     <Link href={"#work"}><Button className={"hover:transition-transform hover:scale-108 duration-300 rounded-full"}>View My Work</Button></Link>
                     <Link target='_blank' href={data.resumeLink}><Button className={"hover:transition-color hover:bg-black hover:text-white duration-400 rounded-full border-black"} variant="outline">Download CV</Button></Link>
                 </div>
-                <div className='mt-12'>
-                    <ul className='flex gap-5'>
-                        {Object.entries(data.links).map(([key, value]) => {
-                            return <li key={key}><Link target='_blank' href={value.url}>{value.icon}</Link></li>
-                        })}
-                    </ul>
-                </div>
+                <ul className='mt-8 md:mt-12 flex gap-5 justify-center'>
+                    {Object.entries(data.links).map(([key, value]) => {
+                        return <li key={key}><Link target='_blank' href={value.url}>{value.icon}</Link></li>
+                    })}
+                </ul>
             </div>
-            <div className='w-[50%] flex justify-center items-center animate-[float_4s_ease-in-out_infinite]'>
+            <div className='w-[80%] md:w-[50%] flex justify-center items-center animate-[float_4s_ease-in-out_infinite]'>
                 <Image
                     className='rounded-3xl'
                     src={data.image}

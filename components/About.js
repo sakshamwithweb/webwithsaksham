@@ -34,10 +34,10 @@ const About = () => {
   }
 
   return (
-    <div id='about' className='scroll-mt-[12px] h-[80vh] py-20 px-6 text-center flex flex-col gap-8'>
-      <h2 className='text-4xl font-bold'>About Me</h2>
-      <p className='text-xl font-semibold text-center text-gray-600 max-w-3xl mx-auto leading-relaxed'>{data.description}</p>
-      <div className='achievement-cards grid grid-cols-3 gap-8'>
+    <div id='about' className='scroll-mt-[12px] min-h-[80vh] py-20 px-6 text-center flex flex-col gap-8'>
+      <h2 className='text-3xl md:text-4xl font-bold'>About Me</h2>
+      <p className='text-lg md:text-xl font-semibold text-center text-gray-600 max-w-3xl mx-auto leading-relaxed'>{data.description}</p>
+      <div className='achievement-cards grid-cols-1 md:grid-cols-3 gap-8'>
         {data.achievement.map(({title,icon,description},index)=>{
           return <Card key={index} icon={icon} title={title} description={description} />
         })}

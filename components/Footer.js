@@ -21,8 +21,8 @@ const Footer = () => {
         ]
     }
     return (
-        <footer className='bg-black justify-around py-12 px-8 pb-24 grid grid-cols-4 text-white gap-16'>
-            <div className='col-span-2 space-y-4'>
+        <footer className='bg-black justify-around py-12 px-4 md:px-8 pb-24 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 text-white gap-8 md:gap-16'>
+            <div className='sm:col-span-2 space-y-4'>
                 <h3 className='text-2xl font-bold bg-gradient-to-br from-[#8BBEE8] to-black bg-clip-text text-transparent'>Let's Create Something Amazing</h3>
                 <p className='text-gray-400 font-semibold'>Ready to bring your ideas to life? Let's discuss your project and create something extraordinary together.</p>
                 <Link href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}?subject=I want to start a project!`}><Button className={"text-black rounded-full py-4 px-6 transition-colors hover:bg-black hover:text-white duration-500"} variant={"outline"}>Start a Project</Button></Link>
