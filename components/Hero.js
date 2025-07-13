@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Hero = () => {
     return (
-        <div className='flex gap-14 min-h-[90vh] mt-18 p-16 items-center'>
+        <div id='hero' className='scroll-mt-[36px] flex gap-14 min-h-[90vh] mt-18 p-16 items-center'>
             <div className='h-full w-[50%]'>
                 <div>
                     <p className='text-[#8BBEE8] font-medium text-lg'>Hello, I'm</p>

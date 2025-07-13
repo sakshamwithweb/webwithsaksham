@@ -2,7 +2,7 @@ import React from 'react'
 
 const TechStack = () => {
   return (
-    <div className='p-8 text-center flex flex-col gap-12 mb-16'>
+    <div id='techstack' className='scroll-mt-[44px] p-8 text-center flex flex-col gap-12 mb-16'>
       <div className='flex flex-col gap-4'>
         <h1 className="text-4xl font-bold">Tech Stack</h1>
         <p className='text-gray-600 text-xl font-semibold'>Technologies I work with to bring ideas to life</p>

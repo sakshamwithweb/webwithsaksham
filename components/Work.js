@@ -51,7 +51,7 @@ const Work = () => {
     )
   }
   return (
-    <div className='p-8 flex flex-col gap-12 mb-16'>
+    <div id='work' className='scroll-mt-[44px] p-8 flex flex-col gap-12 mb-16'>
       <h1 className="text-4xl font-bold">Featured Work</h1>
       <p className='text-gray-600 text-xl font-semibold'>A showcase of my recent projects and achievements</p>
       <div ref={railRef} className="flex overflow-x-auto space-x-4 px-4 py-6  snap-x snap-mandatory scrollbar-hide">

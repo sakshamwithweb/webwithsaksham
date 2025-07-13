@@ -4,7 +4,7 @@ import React from 'react'
 
 const MyJourney = () => {
     return (
-        <div className='p-4 mb-16 flex'>
+        <div id='myjourney' className='p-4 mb-16 flex'>
             <div className='flex flex-col gap-6 w-[50%] p-4'>
                 <h1 className='text-4xl font-bold'>My Journey</h1>
                 <p className='font-semibold text-gray-600 text-lg'>Started as a curious designer, evolved into a full-stack developer. I believe in the power of clean code, intuitive design, and meaningful user experiences.</p>
