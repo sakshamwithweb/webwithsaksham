@@ -15,7 +15,7 @@ const Footer = () => {
                 icon: <Twitter />
             },
             {
-                url: "mailto:websaksham39@gmail.com",
+                url: `mailto:${process.env.NEXT_PUBLIC_EMAIL}`,
                 icon: <Mail />
             },
         ]
@@ -25,7 +25,7 @@ const Footer = () => {
             <div className='col-span-2 space-y-4'>
                 <h3 className='text-2xl font-bold bg-gradient-to-br from-[#8BBEE8] to-black bg-clip-text text-transparent'>Let's Create Something Amazing</h3>
                 <p className='text-gray-400 font-semibold'>Ready to bring your ideas to life? Let's discuss your project and create something extraordinary together.</p>
-                <Button className={"text-black rounded-full py-4 px-6 transition-colors hover:bg-black hover:text-white duration-500"} variant={"outline"}>Start a Project</Button>
+                <Link href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}?subject=I want to start a project!`}><Button className={"text-black rounded-full py-4 px-6 transition-colors hover:bg-black hover:text-white duration-500"} variant={"outline"}>Start a Project</Button></Link>
             </div>
             <div className='space-y-4'>
                 <h3 className='font-bold'>Quick Links</h3>

@@ -12,7 +12,7 @@ const Hero = () => {
         resumeLink: "https://drive.google.com/file/d/1EG3ddDdhO2WlMQnp0dKBjNrfcKWat0Oe/view",
         links: {
             "email": {
-                url: "mailto:websaksham39@gmail.com",
+                url: `mailto:${process.env.NEXT_PUBLIC_EMAIL}`,
                 icon: <Mail />
             },
             "github": {
