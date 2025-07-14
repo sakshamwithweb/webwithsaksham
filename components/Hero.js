@@ -9,7 +9,7 @@ const Hero = () => {
         name: "Saksham Goswami",
         roll: "Full Stack Developer",
         description: "I craft digital experiences that seamlessly blend beautiful design with powerful functionality. Passionate about creating solutions that make a real impact.",
-        resumeLink: "https://drive.google.com/file/d/1EG3ddDdhO2WlMQnp0dKBjNrfcKWat0Oe/view",
+        resumeLink: "https://drive.google.com/file/d/1y69kb9cs_JxsnKP1MYs6hk6AC3ws7Bv0/view",
         links: {
             "email": {
                 url: `mailto:${process.env.NEXT_PUBLIC_EMAIL}`,
