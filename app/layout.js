@@ -1,6 +1,7 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner"
+import { Cursor } from "@/components/Cursor";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${roboto.variable} antialiased`}
       >
+        <Cursor/>
         {children}
         <Toaster />
       </body>
